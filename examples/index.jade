@@ -84,7 +84,7 @@ html
     script(type='text/javascript', src='../quill.js')
     script(type='text/javascript').
       var quill = new Quill('#editor-container', {
-        modules: { toolbar: '#formatting-container' }
+        modules: { toolbar: '#formatting-container', 'image-dnd': true }
       });
       quill.on('selection-change', function(range) {
         console.log('selection-change', range)
